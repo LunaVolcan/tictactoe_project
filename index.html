@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TicTacToe</title>
+    <script src="https://kit.fontawesome.com/5c92fc24e1.js" crossorigin="anonymous"></script>
+</head>
+
+
+    <body>
+    
+      <div id="player-selection-container">
+          <div class="xo">
+      <span class="x-letter">X</span>
+      <span class="o-letter">O</span>
+    </div>
+        <div class="select-mark">
+          <button id="choose-x" class="mark-choice">X</button>
+          <button id="choose-o" class="mark-choice">O</button>
+        </div>
+        <button id="start-game-button">New Game (vs CPU)</button>
+      </div>
+    
+      <div id="game-container" style="display: none;">
+        <div id="turn-indicator">X Turn</div>
+        <div id="game-board">
+          <div class="grid-cell" value="0"></div>
+          <div class="grid-cell" value="1"></div>
+          <div class="grid-cell" value="2"></div>
+          <div class="grid-cell" value="3"></div>
+          <div class="grid-cell" value="4"></div>
+          <div class="grid-cell" value="5"></div>
+          <div class="grid-cell" value="6"></div>
+          <div class="grid-cell" value="7"></div>
+          <div class="grid-cell" value="8"></div>
+        </div>
+        <div id="scoreboard">
+          <div id="player-score">X (YOU): 0</div>
+          <div id="ties">Ties: 0</div>
+          <div id="cpu-score">O (CPU): 0</div>
+        </div>
+        <button id="reset-game"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+      </div>
+    
+      <div id="round-end-modal" style="display: none;">
+        <h2 id="round-result">You won!</h2>
+        <button id="next-round">Next Round</button>
+        <button id="quit-game">Quit</button>
+      </div>
+    
+      <div id="restart-modal" style="display: none;">
+        <h2>Restart Game?</h2>
+        <button id="confirm-restart">Yes, Restart</button>
+        <button id="cancel-restart">No, Cancel</button>
+      </div>
+    
+
+
+
+    
+    <script src="js/custom.js"></script>
+</body>
+</html>
